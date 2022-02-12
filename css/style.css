@@ -69,14 +69,41 @@ h1 {
     list-style: none;
 }
 
+.NavegacionPrincipal li a {
+    position: relative;
+}
+
+.NavegacionPrincipal li a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: black;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  .NavegacionPrincipal li a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
 article p {
     color: white;
+}
+
+article img {
+    max-width: 100%;
 }
 
 .section-flex {
     display: flex;
     flex-direction: column;
     color: white;
+    margin-top: 5rem;
 }
 
 @media (min-width: 480px) {
@@ -84,6 +111,15 @@ article p {
         flex-direction: row;
     }
     
+}
+
+.section-flex div img {
+    transition: all 350ms;
+    width: 225px;
+}
+
+.section-flex div img:hover {
+    transform: scale(1.50);
 }
 
 footer {
