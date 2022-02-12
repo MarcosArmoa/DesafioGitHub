@@ -4,27 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Coder Construcciones</title>
 </head>
 <body>
     <header>
-        <div class="principalHead">
-            <a href="index.html"> <img src="img/building-front.png" alt="Logo de la empresa"></a>
-            <h1>CODER CONSTRUCCIONES</h1>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Coder Construcciones</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="empresa.html">Empresa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="proyecto.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
 
-        <nav class="navHeader">
-            <ul class="NavegacionPrincipal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-                <li><a href="proyecto.html">Proyectos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <article>
@@ -33,30 +55,30 @@
         Voluptate eius similique illo suscipit libero, a quibusdam nesciunt, consectetur fugiat eaque pariatur blanditiis voluptatum placeat odio temporibus in tempore. Voluptates temporibus ipsam provident esse qui, veniam accusantium quae vel!
         Dignissimos ab eveniet inventore! Voluptates deserunt iste possimus ab sed at odit, nemo ipsum corporis officiis repellat nostrum, modi animi consectetur incidunt! Iste eius sequi aspernatur atque quas aliquam veritatis.
         Porro aliquam voluptate eum ipsa repudiandae assumenda aut explicabo impedit eos, facilis dignissimos repellat cum doloribus alias fuga illo culpa quo adipisci enim nobis rerum rem quibusdam voluptatibus sequi. Pariatur.</p>
-        <section class="section-flex">
-            <div>
-                <img src="img/descarga.jpeg" alt="Trabajor">
+         <div class="row x">
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/descarga.jpeg" alt="Trabajor" class="animacion">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eius nisi in fugit libero iste provident ullam laboriosam ex quo numquam culpa reprehenderit officiis consequatur, reiciendis distinctio at. Vitae, placeat.
                     Similique</p>
             </div>
 
-            <div>
-                <img src="img/pared.jpg" alt="">
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/pared.jpg" alt="Pared" class="animacion">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eius nisi in fugit libero iste provident ullam laboriosam ex quo numquam culpa reprehenderit officiis consequatur, reiciendis distinctio at. Vitae, placeat.
                     Similique</p>
             </div>
 
-            <div>
-                <img src="img/casa.jpg" alt="Casa">
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/casa.jpg" alt="Casa" class="animacion">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eius nisi in fugit libero iste provident ullam laboriosam ex quo numquam culpa reprehenderit officiis consequatur, reiciendis distinctio at. Vitae, placeat.
                     Similique</p>
             </div>
-            <div>
-                <img src="img/edificio.jpg" alt="Edificio">
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/edificio.jpg" alt="Edificio" class="animacion">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eius nisi in fugit libero iste provident ullam laboriosam ex quo numquam culpa reprehenderit officiis consequatur, reiciendis distinctio at. Vitae, placeat.
                     Similique</p>
             </div>
-        </section>
+        </div>
     </article>
 
     <footer>
