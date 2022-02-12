@@ -1,0 +1,243 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    font-size: 16px;
+    background-image: linear-gradient(to top,#313131  0%, white 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.principalHead{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 50rem;
+    background-color: #0097a7;
+}
+
+h1 {
+    color: #eb1c23;
+    grid-column: 2;
+    font-size: 3.8rem;
+}
+
+.navHeader {
+    grid-column: 3;
+
+}
+
+.NavegacionPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: #6363ff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 480px) {
+    .NavegacionPrincipal {
+        flex-direction: row;
+    }
+    
+}
+
+.NavegacionPrincipal a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1.2rem;
+}
+
+.NavegacionPrincipal a:hover {
+    background-color: #4646fa;
+    color: black;
+}
+
+.NavegacionPrincipal li {
+    text-decoration: none;
+    list-style: none;
+}
+
+article p {
+    color: white;
+}
+
+.section-flex {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+@media (min-width: 480px) {
+    .section-flex {
+        flex-direction: row;
+    }
+    
+}
+
+footer {
+    background-color: #a8a8a8;
+    margin-top: auto;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+@media (min-width: 480px) {
+    .container-footer {
+        flex-direction: row;
+        padding-left: 20rem;
+        padding-right: 80rem;
+    }
+}
+
+.titulo-footer {
+    font-size: 120%;
+}
+
+.mapa-del-sitio li {
+    list-style: none;
+}
+
+.mapa-del-sitio a {
+    text-decoration: none;
+    color: black;
+}
+
+.mapa-del-sitio a:hover {
+    background-color: #7c7a7a ;
+    color: white;
+}
+
+.empresa-h2 {
+    text-align: center;
+    background-color: slategray;
+}
+
+.articulo-empresa {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 480px) {
+    .articulo-empresa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .NuestrosComienzos-grid {
+        grid-column: 1 / 2 ;
+    }
+    .NuestrosComienzos-text {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
+.tabla-projecto {
+    border-style: solid;
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+td, th {
+    padding: 0.5rem 1rem;
+    border-style: solid;
+}
+
+@media (max-width: 480px) {
+    table{
+        width: 100%;
+    }
+
+    table tr {
+        display: flex;
+        flex-direction: column;
+        border: 0.1rem solid;
+        padding: 1rem;
+    }
+
+    td, th {
+        border-style: none;
+    }
+
+    table thead {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    .NuestrosServicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Estructuracion {
+        grid-column: 1 / 2;
+    }
+
+    .EstructuracionImagen {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .Excavacion {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .ExcavacionImagen {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .Albañileria {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    .AlbañileriaImagen {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .Yeseria {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .YeseriaImagen{
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+}
+
+.direccionContacto {
+    color: black;
+}
+
+.nombreContacto {
+    font-size: 3rem;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 2rem;
+}
