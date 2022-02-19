@@ -1,0 +1,19 @@
+$color-texto-imagen: #88FFF8;
+
+$color-titulo: #72C5FB;
+
+article {
+    .textoimagen {
+        color:$color-texto-imagen;
+    }
+    .row {
+        .textoimagen {
+            color: $color-texto-imagen;
+        }
+
+        .empresa-h2 {
+            color: $color-titulo;
+        }
+    }
+}
+
