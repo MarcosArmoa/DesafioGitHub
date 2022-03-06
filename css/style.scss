@@ -1,11 +1,24 @@
-$color-texto-imagen: #88FFF8;
+$color-texto-imagen: black;
+$color-titulo: #F6C90E;
+$tamaños-de-fuente: (
+    "chico": 400,
+    "medio": 500,
+    "negrita": 700
+);
 
-$color-titulo: #72C5FB;
+@mixin textoGeneral {
+    font-size: 1.6rem;
+    color: black;
+}
 
 article {
+
     .textoimagen {
         color:$color-texto-imagen;
-    }
+        @include textoGeneral;
+        font-weight: map-get($tamaños-de-fuente, chico);
+}
+
     .row {
         .textoimagen {
             color: $color-texto-imagen;
@@ -17,3 +30,21 @@ article {
     }
 }
 
+
+
+h3 h4 {
+    font-weight: map-get($tamaños-de-fuente, negrita);
+}
+
+h4 {
+    font-size: larger;
+}
+
+footer {
+    font-weight: map-get($tamaños-de-fuente, medio);
+}
+
+td {
+    @extend footer ;
+    text-align: center;    
+}

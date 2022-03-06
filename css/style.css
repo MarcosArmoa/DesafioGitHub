@@ -6,7 +6,8 @@ html {
 
 body {
     font-size: 16px;
-    background-image: linear-gradient(to top,#313131  0%, white 100%);
+   /* background-image: linear-gradient(to top,#313131  0%, white 100%); */
+    background-color: #EEEEEE;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -165,7 +166,7 @@ footer {
 
 .empresa-h2 {
     text-align: center;
-    background-color: slategray;
+    background-color: #3A4750;
 }
 
 .articulo-empresa {
@@ -279,4 +280,8 @@ td, th {
 legend {
     font-weight: bold;
     font-size: 2rem;
+}
+
+header {
+    background-color: #212529;
 }
