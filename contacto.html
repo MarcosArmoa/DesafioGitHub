@@ -59,35 +59,41 @@
           </div>
         </div>
 
-
+        <section class="contactoTitulo">
         <h3 class="nombreContacto">Coder construcciones</h3>
         <p class="direccionContacto">Direccion:Calle falsa 123 <br> Tel: 11 1235-6789 <br> Mail: coderconstrucciones@gmail.com</p>
+      </section>
 
         <form>
-            <div>
-            <legend>Llena este formulario para que nos contactemos en la brevedad</legend>
-            <input type="text" placeholder="Nombre y Apellido">
-            <br>
-            <laabel>¿Estas en representacion de una empresa?</label>
-            <input type="checkbox">
-            <br>
-            <label>¿Que servicio deseas adquirir?</label>
-                <select>
-                    <option value=""disabled selected>Selecciona un servicio</option>
-                    <option value="estructuracion">Estructuracion</option>
-                    <option value="excavacion">Excavacion</option>
-                    <option value="albañileria">Albañileria</option>
-                    <option value="yeseria">Yeseria</option>
-                </select>
-            <br>
-            <input type="email" placeholder="Correo Electrónico">
-            <br>
-            <input type="number" placeholder="Teléfono">
-            <br>
-            <input type="text" placeholder="Mensaje">
+          <section class="cuadroFormulario">
+            <div class="inputs">
+              <legend>Llena este formulario para que nos contactemos en la brevedad</legend>
+              <input type="text" placeholder="Nombre y Apellido" class="formulario" required="" pattern="[a-zA-Z]+" >
+              <br>
+              <input type="email" placeholder="Correo Electrónico" class="formulario" required="">
+              <br>
+              <input type="text" placeholder="Teléfono" class="formulario" maxlength="10" minlength="10" required="" pattern="[0-9]+">
+              <br>
+              <input type="text" placeholder="Mensaje" class="formulario" required="">
+              <br>
+              <label>¿Estas en representacion de una empresa?</label>
+              <input type="checkbox">
+              <br>
+              <label>¿Que servicio deseas adquirir?</label>
+                  <select required="">
+                      <option value=""disabled selected>Selecciona un servicio</option>
+                      <option value="estructuracion">Estructuracion</option>
+                      <option value="excavacion">Excavacion</option>
+                      <option value="albañileria">Albañileria</option>
+                      <option value="yeseria">Yeseria</option>
+                  </select>
             </div>
+          <div class="botonesFormulario">
             <input type="submit" value="Enviar">
+
             <button type="reset">Limpiar formulario</button>
+          </div>
+          </section>
         </form>
     </article>
 

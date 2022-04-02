@@ -1,6 +1,8 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 
@@ -231,6 +233,7 @@ td, th {
 
     .Estructuracion {
         grid-column: 1 / 2;
+        text-align: center;
     }
 
     .EstructuracionImagen {
@@ -241,6 +244,7 @@ td, th {
     .Excavacion {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+        text-align: center;
     }
 
     .ExcavacionImagen {
@@ -251,6 +255,7 @@ td, th {
     .Albañileria {
         grid-row: 3 / 4;
         grid-column: 1 / 2;
+        text-align: center;
     }
 
     .AlbañileriaImagen {
@@ -261,6 +266,7 @@ td, th {
     .Yeseria {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
+        text-align: center;
     }
 
     .YeseriaImagen{
@@ -284,4 +290,123 @@ legend {
 
 header {
     background-color: #212529;
+}
+
+.textoimagenxl {
+    color: black;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 400;
+    text-align: justify;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    line-height: 6rem;
+}
+
+
+.imagen {
+    position: relative;
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.imagen__img {
+    display: block;
+    width: 100%;
+}
+
+.imagen__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.imagen__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.imagen__overlay:hover {
+    opacity: 1;
+}
+
+.imagen__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.imagen__texto {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.servicios__img {
+    text-align: center;
+    align-items: center;
+}
+
+.formulario {
+    background-color: lightgray;
+    padding: 12px;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+    border-style: none;
+    border-bottom: 5px solid #F6C90E;
+    font-size: 1.8rem;
+}
+
+.cuadroFormulario {
+    background-color:#a8a8a8 ;
+}
+
+.botonesFormulario{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.botonesFormulario input {
+    background-color: #3A4750;
+    color:#F6C90E;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.botonesFormulario button {
+    background-color: #3A4750;
+    color:#F6C90E;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+@media (min-width: 480px) {
+
+    .cuadroFormulario{
+        margin: auto;
+        width: 60rem;
+        border-radius: 10px;
+        padding: 5rem;
+    }
+    .inputs{
+        text-align: center;
+    }
+    .formulario{
+        width: 50rem;
+    }
+
+    .contactoTitulo{
+        width: 60rem;
+        margin: auto;
+        padding: 0 5rem ;
+    }
 }
